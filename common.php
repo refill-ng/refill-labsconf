@@ -14,6 +14,7 @@ $config['options']['usedomainaswork']['default'] = true;
 
 // Blacklist nytimes
 $config['blacklist'][] = "\bnytimes.com\b";
+$config['blacklist'][] = "\bwebcitation.org\b";
 
 // Banners
 $banners = array();
