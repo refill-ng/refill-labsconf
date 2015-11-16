@@ -3,7 +3,7 @@
 
 // Supported wikis
 $config['wikis']['wikipedia']['identifiers'] = array(
-	"en", "sv", "nl", "de", "fr", "war", "ceb", "ru", "it", "es", "vi", "pl", "simple", "zh", "ja", "ro", "bn", "pt"
+	"en", "sv", "nl", "de", "fr", "war", "ceb", "ru", "it", "es", "vi", "pl", "simple", "zh", "ja", "ro", "bn", "pt", "af"
 );
 
 // Maximum execution time, in seconds
