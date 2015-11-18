@@ -5,6 +5,28 @@
 $config['wikis']['wikipedia']['identifiers'] = array(
 	"en", "sv", "nl", "de", "fr", "war", "ceb", "ru", "it", "es", "vi", "pl", "simple", "zh", "ja", "ro", "bn", "pt", "af", "el"
 );
+$config['wm-defaultproject'] = "wikipedia";
+$config['wm-projects'] = array(
+	'wikipedia' => array(
+		'default' => 'en',
+		'api' => 'https://%id%.wikipedia.org/w/api.php',
+		'indexphp' => 'https://%id%.wikipedia.org/w/index.php',
+		'wikis' => array(
+			'en', 'sv', 'nl', 'de', 'fr', 'war', 'ceb', 'ru', 'it', 'es', 'vi', 'pl', 'simple', 'zh', 'ja', 'ro', 'bn', 'pt', 'af', 'el',
+			'simple' => array( // override language code
+				'language' => 'en'
+			)
+		)
+	),
+	'wikimedia' => array(
+		'default' => 'meta',
+		'language' => 'en', // the default language for the project
+		'api' => 'https://%id%.wikimedia.org/w/api.php',
+		'indexphp' => 'https://%id%.wikimedia.org/w/index.php',
+		'wikis' => array( 'meta', 'commons' )
+	)
+);
+
 
 // Maximum execution time, in seconds
 $config['maxtime'] = 600;
