@@ -8,6 +8,9 @@ error_reporting( E_ALL );
 // Use the experimental WikimediaWikiProvider
 $config['wikiprovider'] = "WikimediaWikiProvider";
 
+// Unblacklist NYT
+unset( $config['blacklist'][0] );
+
 // English Wikiquote (pretty useless at the moment)
 $config['wikis']['enwikiquote'] = array(
 	"identifiers" => array( "enquote" ),
@@ -26,6 +29,9 @@ rlBannerCallback( function() {
 	        . $I18N->msg( "wmflabs-latestcommit", array( "variables" => array( htmlspecialchars( `git log -1 --oneline` ) ) ) )
 	        . "</div>"
 		. "<div class='alert alert-info'>"
-		. "The tool is now capable of generating localized templates. Please help translating reFill into your language by <a href='https://www.transifex.com/projects/p/refill/'>joining the Transifex project</a>. Thanks again for testing reFill!"
+		. "<h4>Recent changes</h4>"
+		. "<ul>"
+		. "<li>The tool is now capable of generating localized templates. Please help translate reFill into your language by <a href='https://www.transifex.com/projects/p/refill/'>joining the Transifex project</a>. Thanks again for testing reFill!</li>"
+		. "<li>The tool can now expand <i>New York Times</i> references.</li>"
 		. "</div>";
 } );
