@@ -35,8 +35,7 @@ $config['maxtime'] = 600;
 // (Disabled per suggestion at https://github.com/zhaofengli/refill/issues/12 - Let's be more conservative, alright?)
 // $config['options']['usedomainaswork']['default'] = true;
 
-// Blacklist nytimes
-$config['blacklist'][] = "\bnytimes.com\b";
+// Blacklist WebCitation
 $config['blacklist'][] = "\bwebcitation.org\b";
 
 // Banners
