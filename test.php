@@ -8,12 +8,8 @@ error_reporting( E_ALL );
 // Use the experimental WikimediaWikiProvider
 $config['wikiprovider'] = "WikimediaWikiProvider";
 
-// English Wikiquote (pretty useless at the moment)
-$config['wikis']['enwikiquote'] = array(
-	"identifiers" => array( "enquote" ),
-	"api" => "https://en.wikiquote.org/w/api.php",
-	"indexphp" => "https://en.wikiquote.org/w/index.php",
-);
+// Add experimental sco support
+$config['wm-projects']['wikipedia']['wikis'][] = "sco";
 
 // Commit ID in default edit summary
 $config['summaryextra'] = " (" . substr( file_get_contents( ".git/refs/heads/master" ), 0, 7 ) . ")";
