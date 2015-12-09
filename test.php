@@ -8,8 +8,9 @@ error_reporting( E_ALL );
 // Use the experimental WikimediaWikiProvider
 $config['wikiprovider'] = "WikimediaWikiProvider";
 
-// Add experimental sco support
+// Experimental wikis
 $config['wm-projects']['wikipedia']['wikis'][] = "sco";
+$config['wm-projects']['wikipedia']['wikis'][] = "id";
 
 // Commit ID in default edit summary
 $config['summaryextra'] = " (" . substr( file_get_contents( ".git/refs/heads/master" ), 0, 7 ) . ")";
