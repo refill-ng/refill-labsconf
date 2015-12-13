@@ -10,7 +10,7 @@ if ( false !== strpos( $_SERVER['HTTP_USER_AGENT'], "MSIE" ) || false !== strpos
 $banners[] = "<div class='alert alert-info'>"
 		. "<h4>Recent changes</h4>"
 		. "<ul>"
-		. "<li>The tool is now capable of generating localized templates. Please help translate reFill into your language by <a href='https://www.transifex.com/projects/p/refill/'>joining the Transifex project</a>. Thanks again for testing reFill!</li>"
+		. "<li>The tool is now capable of generating localized templates. Please help translate reFill into your language by <a href='https://www.transifex.com/projects/p/refill/'>joining the Transifex project</a>. Thank you for using reFill!</li>"
 		. "<li>The tool can now expand <i>New York Times</i> references.</li>"
 		. "</div>";
 
