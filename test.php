@@ -5,9 +5,6 @@ require_once __DIR__ . "/common.php";
 // Report all errors
 error_reporting( E_ALL );
 
-// Use the experimental WikimediaWikiProvider
-$config['wikiprovider'] = "WikimediaWikiProvider";
-
 // Experimental wikis
 $config['wm-projects']['wikipedia']['wikis'][] = "sco";
 $config['wm-projects']['wikipedia']['wikis'][] = "id";
