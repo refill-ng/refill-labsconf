@@ -4,3 +4,12 @@ require_once __DIR__ . "/common.php";
 
 // Commit ID in default edit summary
 $config['summaryextra'] = " (" . substr( file_get_contents( ".git/refs/heads/labs-stable" ), 0, 7 ) . ")";
+
+// Link handlers
+$config['linkhandlers'] = array(
+	array(
+		"regex" => "/^http\:\/\/www\.nytimes\.com/",
+		"handler" => "NewYorkTimesLinkHandler"
+	),
+	"CitoidLinkHandler",
+);

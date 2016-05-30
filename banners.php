@@ -10,7 +10,6 @@ if ( false !== strpos( $_SERVER['HTTP_USER_AGENT'], "MSIE" ) || false !== strpos
 $banners[] = "<div class='alert alert-info'>"
 		. "<h4>Recent changes</h4>"
 		. "<ul>"
-		. "<li>The tool is now capable of generating localized templates. Please help translate reFill into your language on <a href='https://translatewiki.net/wiki/Special:Translate?group=int-refill'>translatewiki.net</a>. Thank you for using reFill!</li>"
-		. "<li>The tool can now expand <i>New York Times</i> references.</li>"
+		. "<li>The tool is now using <a href='https://www.mediawiki.org/wiki/Citoid'>Citoid</a> as the backend, which should provide better bibliographic metadata.</li>"
 		. "</div>";
 
