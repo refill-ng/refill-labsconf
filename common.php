@@ -14,7 +14,7 @@ $config['wm-projects'] = array(
 		'api' => 'https://%id%.wikipedia.org/w/api.php',
 		'indexphp' => 'https://%id%.wikipedia.org/w/index.php',
 		'wikis' => array(
-			'en', 'sv', 'nl', 'de', 'fr', 'war', 'ceb', 'ru', 'it', 'es', 'vi', 'pl', 'simple', 'zh', 'ja', 'ro', 'bn', 'pt', 'af', 'el', "ta", "id", "sco"
+			'en', 'sv', 'nl', 'de', 'fr', 'war', 'ceb', 'ru', 'it', 'es', 'vi', 'pl', 'simple', 'zh', 'ja', 'ro', 'bn', 'pt', 'af', 'el', 'ta', 'id', 'sco',
 			'simple' => array( // override language code
 				'language' => 'en'
 			)
