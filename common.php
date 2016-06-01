@@ -29,6 +29,14 @@ $config['wm-projects'] = array(
 	)
 );
 
+// Link handlers
+$config['linkhandlers'] = array(
+	array(
+		"regex" => "/^http\:\/\/www\.nytimes\.com/",
+		"handler" => "NewYorkTimesLinkHandler"
+	),
+	"CitoidLinkHandler",
+);
 
 // Maximum execution time, in seconds
 $config['maxtime'] = 600;
