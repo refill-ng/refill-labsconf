@@ -6,6 +6,7 @@ require_once __DIR__ . "/common.php";
 error_reporting( E_ALL );
 
 // Experimental wikis
+$config['wm-projects']['wikipedia']['wikis'][] = "th";
 
 // Commit ID in default edit summary
 $config['summaryextra'] = " (" . substr( file_get_contents( ".git/refs/heads/master" ), 0, 7 ) . ")";
