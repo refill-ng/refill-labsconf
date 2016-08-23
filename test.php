@@ -7,6 +7,9 @@ error_reporting( E_ALL );
 
 // Experimental wikis
 $config['wm-projects']['wikipedia']['wikis'][] = "bh";
+$config['wm-projects']['wikipedia']['wikis'][] = "te";
+$config['wm-projects']['wikipedia']['wikis'][] = "kn";
+$config['wm-projects']['wikipedia']['wikis'][] = "bn";
 
 // Commit ID in default edit summary
 $config['summaryextra'] = " (" . substr( file_get_contents( ".git/refs/heads/master" ), 0, 7 ) . ")";
