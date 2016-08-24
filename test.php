@@ -6,10 +6,10 @@ require_once __DIR__ . "/common.php";
 error_reporting( E_ALL );
 
 // Experimental wikis
-$config['wm-projects']['wikipedia']['wikis'][] = "bh";
-$config['wm-projects']['wikipedia']['wikis'][] = "te";
-$config['wm-projects']['wikipedia']['wikis'][] = "kn";
-$config['wm-projects']['wikipedia']['wikis'][] = "bn";
+$config['wm-projects']['wikipedia']['wikis'] = array_merge(
+	$config['wm-projects']['wikipedia']['wikis'],
+	array( "bh", "te", "kn", "bn", "hi", "gu", "gom", "ml", "or", "pa", "ta", "tcy" )
+);
 
 // Commit ID in default edit summary
 $config['summaryextra'] = " (" . substr( file_get_contents( ".git/refs/heads/master" ), 0, 7 ) . ")";
