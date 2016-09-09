@@ -48,6 +48,9 @@ $config['maxtime'] = 600;
 // Blacklist WebCitation
 $config['blacklist'][] = "\bwebcitation.org\b";
 
+// Blacklist ProQuest
+$config['blacklist'][] = "\bproquest.com\b";
+
 // Banners
 $banners = array();
 
