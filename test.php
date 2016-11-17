@@ -8,7 +8,7 @@ error_reporting( E_ALL );
 // Experimental wikis
 $config['wm-projects']['wikipedia']['wikis'] = array_merge(
 	$config['wm-projects']['wikipedia']['wikis'],
-	array( "bh", "te", "kn", "bn", "hi", "gu", "gom", "ml", "or", "pa", "ta", "tcy" )
+	array( "bh", "te", "kn", "bn", "hi", "gu", "gom", "ml", "or", "pa", "ta", "tcy", "sr" )
 );
 
 // Commit ID in default edit summary
