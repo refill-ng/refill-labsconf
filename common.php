@@ -4,9 +4,6 @@
 $config['wikiprovider'] = "WikimediaWikiProvider";
 
 // Supported wikis
-$config['wikis']['wikipedia']['identifiers'] = array(
-	"en", "sv", "nl", "de", "fr", "war", "ceb", "ru", "it", "es", "vi", "pl", "simple", "zh", "ja", "ro", "bn", "pt", "af", "el", "bn", "ta", "id", "sco", "ur", "uk", "ar", "cs"
-);
 $config['wm-defaultproject'] = "wikipedia";
 $config['wm-projects'] = array(
 	'wikipedia' => array(
@@ -14,7 +11,7 @@ $config['wm-projects'] = array(
 		'api' => 'https://%id%.wikipedia.org/w/api.php',
 		'indexphp' => 'https://%id%.wikipedia.org/w/index.php',
 		'wikis' => array(
-			'en', 'sv', 'nl', 'de', 'fr', 'war', 'ceb', 'ru', 'it', 'es', 'vi', 'pl', 'simple', 'zh', 'ja', 'ro', 'bn', 'pt', 'af', 'el', 'ta', 'id', 'sco',
+			'en', 'sv', 'nl', 'de', 'fr', 'war', 'ceb', 'ru', 'it', 'es', 'vi', 'pl', 'simple', 'zh', 'ja', 'ro', 'bn', 'pt', 'af', 'el', 'ta', 'id', 'sco', 'ar', 'cs',
 			'simple' => array( // override language code
 				'language' => 'en'
 			)
