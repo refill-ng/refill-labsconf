@@ -14,6 +14,16 @@ $config['wm-projects']['wikipedia']['wikis'] = array_merge(
 // Commit ID in default edit summary
 $config['summaryextra'] = " (" . substr( file_get_contents( ".git/refs/heads/master" ), 0, 7 ) . ")";
 
+// Test ArchiveIsUrlFixerMetadataParser
+array_unshift( $config['linkhandlers'], array(
+	"regex" => "/^https?\:\/\/archive\.(is|fo)/",
+	"handler" => "StandaloneLinkHandler"
+) );
+$config['parserchain'] = array(
+	"CitoidMetadataParser",
+	"ArchiveIsUrlFixerMetadataParser",
+);
+
 // Test version banners
 rlBannerCallback( function() {
 	global $I18N, $app;
