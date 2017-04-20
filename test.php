@@ -16,7 +16,7 @@ $config['summaryextra'] = " (" . substr( file_get_contents( ".git/refs/heads/mas
 
 // Test ArchiveIsUrlFixerMetadataParser
 array_unshift( $config['linkhandlers'], array(
-	"regex" => "/^https?\:\/\/archive\.(is|fo)/",
+	"regex" => "/^https?\:\/\/archive\.(is|fo|li|today)/",
 	"handler" => "StandaloneLinkHandler"
 ) );
 $config['parserchain'] = array(
