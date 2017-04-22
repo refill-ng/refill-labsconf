@@ -22,6 +22,7 @@ array_unshift( $config['linkhandlers'], array(
 $config['parserchain'] = array(
 	"CitoidMetadataParser",
 	"ArchiveIsUrlFixerMetadataParser",
+	"NewYorkTimesMetadataParser",
 );
 
 // Test version banners
