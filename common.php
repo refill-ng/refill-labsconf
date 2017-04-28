@@ -29,10 +29,19 @@ $config['wm-projects'] = array(
 // Link handlers
 $config['linkhandlers'] = array(
 	array(
+		"regex" => "/^https?\:\/\/archive\.(is|fo|li|today)/",
+		"handler" => "StandaloneLinkHandler"
+	),
+	array(
 		"regex" => "/^http\:\/\/www\.nytimes\.com/",
 		"handler" => "NewYorkTimesLinkHandler"
 	),
 	"CitoidLinkHandler",
+);
+$config['parserchain'] = array(
+	"CitoidMetadataParser",
+	"ArchiveIsUrlFixerMetadataParser",
+	"NewYorkTimesMetadataParser",
 );
 
 // Maximum execution time, in seconds
