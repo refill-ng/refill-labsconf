@@ -69,9 +69,9 @@ function rlFooter() {
 function rlBanner() {
 	global $banners, $bannerCallbacks;
 	$banner = implode( "", $banners );
-	foreach ( $bannerCallbacks as $callback ) {
-		$banner .= call_user_func( $callback );
-	}
+	//foreach ( $bannerCallbacks as $callback ) {
+	//	$banner .= call_user_func( $callback );
+	//}
 	return $banner;
 	return implode( "", $banners );
 }
