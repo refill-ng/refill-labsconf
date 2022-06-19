@@ -8,8 +8,8 @@ if ( false !== strpos( $_SERVER['HTTP_USER_AGENT'], "MSIE" ) || false !== strpos
 }
 
 $banners[] = "<div class='alert alert-info'>"
-		. "<h4>Recent changes</h4>"
-		. "<ul>"
-		. "<li>The tool is now using <a href='https://www.mediawiki.org/wiki/Citoid'>Citoid</a> as the backend, which should provide better bibliographic metadata.</li>"
+		. "<h4>reFill has new maintainers!</h4>"
+		. "<p>Led by <a href='https://en.wikipedia.org/wiki/User:Curb_Safe_Charmer'>User:Curb Safe Charmer</a>, a number of new maintainers are now working on reFill.</p>"
+		. "<p>Please bear with us as we work to update the tool, and feel free to <a href='https://phabricator.wikimedia.org/tag/tool-refill/'>report any bugs</a> you find.</p>"
 		. "</div>";
 
