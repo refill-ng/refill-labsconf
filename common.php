@@ -63,7 +63,7 @@ $banners = array();
 // Footer link to Tool Labs
 function rlFooter() {
 	global $I18N;
-	return '<li><a href="https://tools.wmflabs.org"><img style="height: 20px; margin-right: 5px;" src="https://tools.wmflabs.org/favicon.ico"/>' . $I18N->msg( "wmflabs-poweredby" ) . '</a></li>';
+	return '<li><a href="https://wikitech.wikimedia.org/wiki/Portal:Toolforge"><img style="height: 20px; margin-right: 5px;" src="https://refill.toolforge.org/favicon.ico"/>' . $I18N->msg( "wmflabs-poweredby" ) . '</a></li>';
 }
 
 function rlBanner() {
